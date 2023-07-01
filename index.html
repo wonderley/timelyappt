@@ -1,9 +1,66 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Example</title>
+        <title>TimelyAppt</title>
+        <style>
+            @font-face { font-family: Marcellus; src: url('./Marcellus/Marcellus-Regular.ttf'); } 
+            html {
+                height: 100%;
+            }
+            body {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                font-family: Marcellus, serif;
+                margin: 0px;
+            }
+            .logo {
+                font-size: 36px;
+                margin: 18px;
+                /* border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                border-radius: 5px;
+                padding: 10px; */
+            }
+            .vertical {
+                display: flex;
+                flex-direction: column;
+            }
+            .horizontal {
+                display: flex;
+                flex-direction: row;
+                max-height: 100%;
+            }
+            .main-section {
+                background-image: url('./Great Receptionist 2.jpg');
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                /*justify-content: center;*/
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                /* min-height: 800px;
+                min-width: 500px; */
+            }
+            .centered-text {
+                font-size: 48px;
+                width: 50%;
+                padding: 100px;
+                box-sizing: border-box;
+                /*flex: 0 0 120px;*/
+            }
+        </style>
     </head>
     <body>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
+        <div style="margin: 10px">
+            <div class="logo">TimelyAppt</div>
+        </div>
+        <div class="main-section">
+            <div class="centered-text">
+                Appointment scheduling made easy.
+            </div>
+        </div>
     </body>
 </html>
